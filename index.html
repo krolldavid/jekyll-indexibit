@@ -1,6 +1,7 @@
 ---
-layout: default
+title: Home
 ---
+{% include header.html %}
 
 <div class="article-navigation">
   {% for item in site.categories.articles limit:40 offset:0 %}
@@ -10,7 +11,8 @@ layout: default
   {% endfor %}
 </div>
 
-{% for item in site.categories.articles limit:1 offset:0 %}
+<!-- Show last 15 post -->
+{% for item in site.categories.articles limit:15 offset:0 %}
   <div class="intro">
     <div class="title">{{item.title}}</div>
     <div class="abstract">{{item.abstract}}</div>
@@ -24,3 +26,4 @@ layout: default
   </div>
 {% endfor %}
 
+{% include footer.html %}
