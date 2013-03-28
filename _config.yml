@@ -9,12 +9,12 @@ exclude:
 prose:
   rooturl: "_posts"
   metadata: 
-    _posts/articles: |
+    _posts/: |
       published: false
       layout: article
-      title: Your Post Title
-      abstract: Short summary of your article.
-      author_twitter: johndoe
-      author: John Doe
+      title: Título de tu post 
+      abstract: Resument corto del post
+      author_twitter: msanchezmora
+      author: Magda Sánchez
       categories:
       - articles
