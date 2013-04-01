@@ -12,6 +12,10 @@
 
     <div id="header">
       <div class="navigation">
-        <a href="{{site.baseurl}}" class="title">Plantilla Básica Jekyll</a>
+        <a href="{{site.baseurl}}" class="title">Home </a>
+        {% for item in site.categories.pages limit:5 offset:0 %}
+          <a href="{{site.baseurl}}{{item.url}}" class="title"> &middot; {{item.title}}</a>
+        {% endfor %}
       </div>
     </div>
+  
