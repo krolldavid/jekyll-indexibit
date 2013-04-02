@@ -1,7 +1,7 @@
 auto: true
 server: true
 permalink: none
-baseurl: "http://localhost:4000/"
+baseurl: ""
 exclude:
 - .gitignore
 - README.md
@@ -12,8 +12,8 @@ prose:
     _posts/: |
       published: false
       layout: article
-      title: Título de tu post 
-      abstract: Resument corto del post
+      title: Post Title 
+      abstract: Short summary of the post
       author_twitter: msanchezmora
       author: Magda Sánchez
       categories:
