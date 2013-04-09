@@ -6,6 +6,10 @@ exclude:
 - .gitignore
 - README.md
 
+title:
+author:
+
+
 prose:
   rooturl: "_posts"
   metadata: 

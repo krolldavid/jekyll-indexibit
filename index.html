@@ -1,28 +1,91 @@
----
-title: Home
----
-{% include header.html %}
-
-<!-- navigation bar for a maximum of 40 post -->
-<div class="article-navigation">
-  {% for item in site.categories.articles limit:40 offset:0 %}
-    <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}"></a>
-  {% endfor %}
-</div>
-
-<!-- Show last 15 post -->
-{% for item in site.categories.articles limit:15 offset:0 %}
-  <div class="intro">
-    <div class="title">{{item.title}}</div>
-    <div class="abstract">{{item.abstract}}</div>
-    <div class="meta"> Escrito por <a href="http://twitter.com/{{item.author_twitter}}">{{item.author}}</a> el {{ item.date | date: "%B %d, %Y" }} </div>
-  </div>
-
-  <div class="article-wrapper">
-    <div class="help post-content">
-      {{ item.content }}
-    </div>
-  </div>
-{% endfor %}
-
-{% include footer.html %}
+<!doctype html>
+<html lang='en-us'>
+<head>
+	<meta charset='utf-8'>
+		<title>{{page.title}}</title>
+		<meta name='keywords' content="" />
+		<meta name='description' content="{{page.content | truncate: 50 }}" />
+		<meta name='author' content="{{ site.author }}" />
+		<meta name='copyright' content="" />
+		<meta name='Robots' content="INDEX,FOLLOW" />
+		<meta name='Revisit-after' content="1 Day" />
+		<meta name='generator' content="Jekyll" />
+		<link rel='stylesheet' href='stylesheets/screen.css' type='text/css' />
+		<script type='text/javascript' src='js/jquery.js'></script>
+	</head>
+	<body class='exhibits section-1 exhibit-53 format-visual_index'>
+		<div id='index'>
+			<div class='container'>
+				<div class='top'>
+					<p><strong><a href='index.html' style='color: black;'>{{ site.title }}</a></strong></p>
+				</div>
+				<ul class='section active_section' id='section_1'>
+				</ul>
+				<ul class='section' id='section_10'>
+					<li><span id='section_title_10' class='section_title'><a href='http://www.indexhibit.org/cms/' id='section_link_10'>CMS 2</a></span>
+						<ul>
+							<li id='exhibit_68' class='exhibit_title'><a href='http://www.indexhibit.org/cms/features/'>Features</a></li>
+							<li id='exhibit_88' class='exhibit_title exhibit_link'><a href='http://two.indexhibit.org/ndxzstudio/' target='_new'>Demo</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class='section' id='section_2'>
+					<li><span id='section_title_2' class='section_title'><a href='http://www.indexhibit.org/participants/' id='section_link_2'>Participants</a></span>
+						<ul>
+							<li id='exhibit_27' class='exhibit_title'><a href='http://www.indexhibit.org/history/'>History</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class='section' id='section_12'>
+					<li><span id='section_title_12' class='section_title'><a href='http://www.indexhibit.org/manage/' id='section_link_12'>Login/Register</a></span>
+						<ul>
+							<li id='exhibit_47' class='exhibit_title'><a href='http://www.indexhibit.org/help/'>Help</a></li>
+							<li id='exhibit_127' class='exhibit_title exhibit_link'><a href='http://www.indexhibit.org/forum/'>Forum</a></li>
+							<li id='exhibit_97' class='exhibit_title'><a href='http://www.indexhibit.org/webhosting/'>Webhosting</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class='section' id='section_14'>
+					<li><span id='section_title_14' class='section_title'><a href='http://www.indexhibit.org/plugin/' id='section_link_14'>Plugins</a></span>
+						<ul>
+						</ul>
+					</li>
+				</ul>
+				<ul class='section' id='section_4'>
+					<li><span id='section_title_4' class='section_title'><a href='http://www.indexhibit.org/news/' id='section_link_4'>News</a></span>
+						<ul>
+							<li id='exhibit_63' class='exhibit_title'><a href='http://www.indexhibit.org/contact/'>Contact</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class='section' id='section_7'>
+				</ul>
+				<ul class='section' id='section_15'>
+					<li id='exhibit_94' class='exhibit_title exhibit_link'><a href='http://dev.indexhibit.org/'>Developers</a></li>
+				</ul>
+				<ul class='section' id='section_13'>
+				</ul>
+				<ul class='section' id='section_8'>
+				</ul>
+				<div class='bot'><p>Created by:<br />
+				<a href='http://eatock.com/'>Daniel Eatock</a> &#38;<br />
+				<a href='http://vaska.com/'>Jeffery Vaska</a></p>
+				<p><a href='index.html'>Built with Indexhibit</a></p></div>
+			</div>
+		</div>
+		<div id='exhibit'>
+			<div class='container'>
+				<div class='top'><!-- --></div>
+				<!-- text and image -->
+				<p><strong>Invitation</strong></p>
+				<p>Please use Indexhibit - a user friendly Content Management System (CMS) to build and manage the content of your website, using the established format consisting of an index for navigating the site and an exhibit area for displaying your works.</p>
+				<p>Index + Exhibit = Indexhibit</p>
+				<p>Indexhibits aim is to establish and promote an archetypal format for the web, a straightforward and effective way to display content, combining good functionality and usability to foreground content over complicated website design. The more websites that use this structure, the more archetypal / invisible the structure becomes, and the more emphasis is placed on content.</p>
+				<p>Please invite your friends/colleagues/family to use Indexhibit.</p>
+				<p>Thank You<br />Daniel Eatock<br />Jeffery Vaska</p>
+				<!-- end text and image -->
+			</div>
+		</div>
+	<script type='text/javascript'>do_statistics();</script>
+	</body>
+</html>
